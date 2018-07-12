@@ -42,6 +42,24 @@ app.get("/blogs", function(req, res) {
   });
 });
 
+//NEW route
+app.get("/blogs/new", function(req, res) {
+  res.render("new");
+});
+
+//CREATE route
+app.post("/blogs", function(req, res) {
+  //create blog
+  Blog.create(req.body.blog, function(err, newBlog) {
+    if(err) {
+      res.render("new");
+    }
+    else {
+      res.redirect("/blogs");
+    }
+  });
+});
+
 //Tell express to listen for requests
 app.listen(3000, function(){
   console.log("Server started.");
