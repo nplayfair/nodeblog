@@ -1,0 +1,22 @@
+{
+  "name": "nodeblog",
+  "version": "1.0.0",
+  "description": "RESTful node blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nplayfair/nodeblog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "nplayfair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nplayfair/nodeblog/issues"
+  },
+  "homepage": "https://github.com/nplayfair/nodeblog#readme"
+}
